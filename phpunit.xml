@@ -2,7 +2,7 @@
 
 <phpunit
     bootstrap="test/bootstrap.php"
-    colors="false"
+    colors="true"
     convertNoticesToExceptions="true"
     convertWarningsToExceptions="true"
     stopOnError="true"
