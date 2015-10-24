@@ -11,5 +11,4 @@ script:
   - phpunit
 
 notifications:
-  on_success: never
-  on_failure: never
+  email: never
