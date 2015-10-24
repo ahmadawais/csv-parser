@@ -1,17 +1,20 @@
 # Use Travis CI's faster Docker-based infrastructure.
 sudo: false
 
-
+# PHP
 language: php
- 
+
+# versions
 php:
   - 5.4
   - 5.5
   - 5.6
   - hhvm
- 
+
+# what to do
 before_script:
   - composer self-update
   - composer install --prefer-source --no-interaction --dev
- 
+
+# unit testing + config attribute to ensure it picks up the testing bootstrap file
 script: phpunit --configuration phpunit.xml
