@@ -29,5 +29,6 @@ before_script:
   - curl -s http://getcomposer.org/installer | php -- --quiet
   - php composer.phar install --dev
 
-script:
-  - vendor/bin/phpunit --coverage-text -c phpunit.xml
+# script:
+#   - vendor/bin/phpunit --coverage-text -c phpunit.xml
+script: phpunit
