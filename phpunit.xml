@@ -1,23 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
 <phpunit
-    bootstrap="tests/bootstrap.php"
-    backupGlobals="false"
-    colors="true"
-    convertErrorsToExceptions="true"
+    bootstrap="Bootstrap.php"
+    colors="false"
     convertNoticesToExceptions="true"
     convertWarningsToExceptions="true"
-    >
+    stopOnError="true"
+    stopOnFailure="true"
+    stopOnIncomplete="true"
+    stopOnSkipped="false">
     <testsuites>
-        <testsuite name="Application Test Suite">
-            <directory>./test/</directory>
+        <testsuite name="parseCSV Test Suite">
+            <directory suffix="Test.php">./test/</directory>
         </testsuite>
     </testsuites>
-
-    <filter>
-        <whitelist>
-            <directory>./</directory>
-            <exclude>
-                <directory>./test</directory>
-            </exclude>
-        </whitelist>
-    </filter>
 </phpunit>
