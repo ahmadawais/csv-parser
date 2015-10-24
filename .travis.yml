@@ -1,3 +1,7 @@
+# Use Travis CI's faster Docker-based infrastructure.
+sudo: false
+
+
 language: php
  
 php:
@@ -10,4 +14,4 @@ before_script:
   - composer self-update
   - composer install --prefer-source --no-interaction --dev
  
-script: phpunit
+script: phpunit --configuration phpunit.xml
